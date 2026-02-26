@@ -117,12 +117,13 @@ body {
   border: none;
   color: #fff;
   padding: 14px 32px;
-  transition: all 0.2s;
+  transition: all 0.7s;
 }
 
 .btn-primary:hover {
   background: var(--lime);
   transform: translateY(-2px);
+
 }
 
 .btn-outline {
@@ -135,7 +136,7 @@ body {
   text-decoration: none;
   border-bottom: 2px solid var(--navy);
   padding-bottom: 2px;
-  transition: all 0.2s;
+  transition: all 0.7s;
   display: inline-block;
 }
 
