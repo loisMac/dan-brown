@@ -1,0 +1,234 @@
+:root {
+  --navy: #2E378E;
+  --sky: #A2CEEA;
+  --orange: #F0922C;
+  --lime: #CED721;
+  --off-white: #EDEADE;
+  --charcoal: #222220;
+  --text: #1A1A18;
+  --text-light: rgba(26,26,24,0.65);
+  --border: rgba(26,26,24,0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  color: var(--text);
+  background: var(--off-white);
+  line-height: 1.6;
+}
+
+/* NAVIGATION */
+.navbar {
+  background: var(--charcoal);
+  padding: 1rem 0;
+}
+
+.navbar-brand {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--off-white) !important;
+}
+
+.nav-link {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(237,234,222,0.6) !important;
+  padding: 0.5rem 1rem !important;
+  transition: color 0.2s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--lime) !important;
+}
+
+/* PAGE HEADER */
+.page-header {
+  padding: 140px 0 80px;
+  background: var(--off-white);
+}
+
+.section-label {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--navy);
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.page-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: var(--text);
+}
+
+/* PROJECT SECTIONS */
+.project-section {
+  padding: 100px 0;
+  background: var(--off-white);
+}
+
+.project-section.alt {
+  background: #E8E4D4;
+}
+
+.project-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin-bottom: 1.5rem;
+  color: var(--navy);
+}
+
+.project-desc {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--text-light);
+  margin-bottom: 1.5rem;
+}
+
+.project-image {
+  width: 100%;
+  aspect-ratio: 3/4;
+  background: var(--charcoal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.project-image::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 60% 60% at 50% 40%, rgba(240,146,44,0.12), transparent 65%);
+}
+
+.project-image span {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  color: rgba(237,234,222,0.15);
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+}
+
+.sub-projects {
+  margin: 2.5rem 0;
+  padding: 2rem;
+  background: rgba(46,55,142,0.05);
+  border-left: 3px solid var(--navy);
+}
+
+.sub-project {
+  margin-bottom: 1.5rem;
+}
+
+.sub-project:last-child {
+  margin-bottom: 0;
+}
+
+.sub-project h3 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 0.25rem;
+}
+
+.location {
+  font-size: 0.95rem;
+  color: var(--text-light);
+  margin: 0;
+}
+
+.availability {
+  font-size: 1.05rem;
+  color: var(--navy);
+  margin-top: 1.5rem;
+}
+
+.credits {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  font-style: italic;
+  margin-top: 2rem;
+}
+
+.btn-primary {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  background: var(--navy);
+  border: none;
+  color: #fff;
+  padding: 14px 32px;
+  transition: all 0.2s;
+}
+
+.btn-primary:hover {
+  background: var(--orange);
+  transform: translateY(-2px);
+}
+
+/* FOOTER */
+footer {
+  background: var(--charcoal);
+  color: rgba(237,234,222,0.5);
+  padding: 2rem 0;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: rgba(237,234,222,0.7);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+footer a:hover {
+  color: var(--lime);
+}
+
+/* RESPONSIVE */
+@media (max-width: 991px) {
+  .page-header {
+    padding: 100px 0 60px;
+  }
+  
+  .project-section {
+    padding: 60px 0;
+  }
+  
+  .project-image {
+    margin-bottom: 2rem;
+  }
+  
+  .order-lg-2 {
+    order: 1;
+  }
+}
