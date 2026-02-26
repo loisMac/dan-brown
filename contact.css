@@ -134,8 +134,8 @@ body {
 }
 
 .contact-item a:hover {
-  color: var(--orange);
-  border-color: var(--orange);
+  color: var(--lime);
+  border-color: var(--lime);
 }
 
 .contact-item p {
@@ -181,7 +181,7 @@ body {
   top: 1.2rem;
   width: 6px;
   height: 6px;
-  background: var(--orange);
+  background: var(--lime);
   border-radius: 50%;
 }
 

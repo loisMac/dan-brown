@@ -95,12 +95,12 @@ body {
   font-family: 'Space Grotesk', sans-serif;
   font-size: 0.7rem;
   font-weight: 500;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--orange);
+  color: var(--sky);
   display: inline-block;
   padding: 0.5rem 1rem;
-  background: rgba(240,146,44,0.12);
+  background: rgba(162,206,234,0.15);
   margin-bottom: 1rem;
 }
 
