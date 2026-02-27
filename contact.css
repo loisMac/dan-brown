@@ -161,6 +161,8 @@ body {
   letter-spacing: -0.03em;
   margin-bottom: 1.5rem;
   color: var(--navy);
+  border-left: 5px solid var(--lime);
+  padding-left: 1.25rem;
 }
 
 .contact-intro {
@@ -254,7 +256,7 @@ body {
 .work-with {
   margin-top: 4rem;
   padding-top: 3rem;
-  border-top: 1px solid var(--border);
+  border-top: 4px solid var(--orange);
 }
 
 .work-with h3 {

@@ -235,6 +235,7 @@ body {
 .key-collaborators {
   padding: 100px 0;
   background: var(--off-white);
+  border-top: 4px solid var(--lime);
 }
 
 .section-title {
@@ -244,6 +245,8 @@ body {
   line-height: 1.1;
   letter-spacing: -0.02em;
   margin-bottom: 3rem;
+  border-left: 5px solid var(--lime);
+  padding-left: 1.25rem;
 }
 
 .collab-card {
@@ -298,6 +301,7 @@ body {
 .cta-section {
   padding: 100px 0;
   background: #E8E4D4;
+  border-top: 4px solid var(--orange);
 }
 
 .cta-title {
@@ -306,6 +310,8 @@ body {
   font-weight: 700;
   margin-bottom: 1.5rem;
   color: var(--navy);
+  border-left: 5px solid var(--orange);
+  padding-left: 1.25rem;
 }
 
 .cta-desc {
