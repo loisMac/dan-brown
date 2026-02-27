@@ -26,8 +26,12 @@ body {
 /* NAVIGATION */
 .navbar {
   background: var(--charcoal);
-  padding: 1.2rem 0 0;
+  padding: 1rem 0 0;
   flex-wrap: wrap;
+}
+
+.navbar > .container {
+  padding-bottom: 0.75rem;
 }
 
 .navbar-brand {
@@ -71,6 +75,15 @@ body {
 .nav-link:hover,
 .nav-link.active {
   color: var(--lime) !important;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+  outline: none;
 }
 
 /* MARQUEE TICKER */

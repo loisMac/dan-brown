@@ -30,6 +30,10 @@ body {
   flex-wrap: wrap;
 }
 
+.navbar > .container {
+  padding-bottom: 0.75rem;
+}
+
 /* MARQUEE TICKER */
 .marquee-band {
   background: var(--lime);
@@ -80,11 +84,38 @@ body {
   color: rgba(237,234,222,0.6) !important;
   padding: 0.5rem 1rem !important;
   transition: color 0.2s;
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 1rem;
+  right: 1rem;
+  height: 2px;
+  background: var(--lime);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  transform: scaleX(1);
 }
 
 .nav-link:hover,
 .nav-link.active {
   color: var(--lime) !important;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+  outline: none;
 }
 
 /* CONTACT SECTION */
