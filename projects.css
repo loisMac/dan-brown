@@ -26,7 +26,40 @@ body {
 /* NAVIGATION */
 .navbar {
   background: var(--charcoal);
-  padding: 1rem 0;
+  padding: 1rem 0 0;
+  flex-wrap: wrap;
+}
+
+/* MARQUEE TICKER */
+.marquee-band {
+  background: var(--lime);
+  overflow: hidden;
+  padding: 0.75rem 0;
+  border-bottom: 3px solid var(--charcoal);
+  width: 100%;
+  flex: 0 0 100%;
+}
+
+.marquee-track {
+  display: flex;
+  white-space: nowrap;
+  animation: marquee 20s linear infinite;
+  width: max-content;
+}
+
+.marquee-track span {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--charcoal);
+  padding: 0 2.5rem;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
 }
 
 .navbar-brand {
@@ -56,19 +89,21 @@ body {
 
 /* PAGE HEADER */
 .page-header {
-  padding: 140px 0 80px;
+  padding: 170px 0 80px;
   background: var(--off-white);
 }
 
 .section-label {
   font-family: 'Space Grotesk', sans-serif;
-  font-size: 0.75rem;
-  font-weight: 500;
+  font-size: 0.7rem;
+  font-weight: 700;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: var(--navy);
-  display: block;
+  color: var(--charcoal);
+  display: inline-block;
   margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  background: var(--orange);
 }
 
 .page-title {
@@ -139,8 +174,8 @@ body {
 .sub-projects {
   margin: 2.5rem 0;
   padding: 2rem;
-  background: rgba(46,55,142,0.05);
-  border-left: 3px solid var(--navy);
+  background: rgba(206,215,33,0.08);
+  border-left: 4px solid var(--lime);
 }
 
 .sub-project {
@@ -202,6 +237,7 @@ footer {
   color: rgba(237,234,222,0.5);
   padding: 2rem 0;
   font-size: 0.9rem;
+  border-top: 4px solid var(--orange);
 }
 
 footer a {
@@ -217,7 +253,7 @@ footer a:hover {
 /* RESPONSIVE */
 @media (max-width: 991px) {
   .page-header {
-    padding: 100px 0 60px;
+    padding: 130px 0 60px;
   }
   
   .project-section {

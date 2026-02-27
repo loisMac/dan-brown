@@ -26,7 +26,40 @@ body {
 /* NAVIGATION */
 .navbar {
   background: var(--charcoal);
-  padding: 1rem 0;
+  padding: 1rem 0 0;
+  flex-wrap: wrap;
+}
+
+/* MARQUEE TICKER */
+.marquee-band {
+  background: var(--lime);
+  overflow: hidden;
+  padding: 0.75rem 0;
+  border-bottom: 3px solid var(--charcoal);
+  width: 100%;
+  flex: 0 0 100%;
+}
+
+.marquee-track {
+  display: flex;
+  white-space: nowrap;
+  animation: marquee 20s linear infinite;
+  width: max-content;
+}
+
+.marquee-track span {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--charcoal);
+  padding: 0 2.5rem;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
 }
 
 .navbar-brand {
@@ -59,7 +92,7 @@ body {
   min-height: calc(100vh - 120px);
   display: flex;
   align-items: center;
-  padding: 140px 0 100px;
+  padding: 170px 0 100px;
   background: var(--off-white);
   position: relative;
 }
@@ -78,13 +111,15 @@ body {
 
 .section-label {
   font-family: 'Space Grotesk', sans-serif;
-  font-size: 0.75rem;
-  font-weight: 500;
+  font-size: 0.7rem;
+  font-weight: 700;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: var(--navy);
-  display: block;
+  color: var(--charcoal);
+  display: inline-block;
   margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  background: var(--orange);
 }
 
 .contact-title {
@@ -209,19 +244,19 @@ body {
 .collab-badge {
   font-family: 'Space Grotesk', sans-serif;
   font-size: 0.75rem;
-  font-weight: 500;
+  font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--navy);
-  background: rgba(46,55,142,0.1);
+  color: var(--charcoal);
+  background: var(--lime);
   padding: 0.75rem 1.25rem;
-  border: 1px solid rgba(46,55,142,0.2);
+  border: 2px solid var(--charcoal);
   transition: all 0.2s;
 }
 
 .collab-badge:hover {
-  background: var(--navy);
-  color: var(--off-white);
+  background: var(--charcoal);
+  color: var(--lime);
 }
 
 /* FOOTER */
@@ -230,6 +265,7 @@ footer {
   color: rgba(237,234,222,0.5);
   padding: 2rem 0;
   font-size: 0.9rem;
+  border-top: 4px solid var(--orange);
 }
 
 footer a {
@@ -245,7 +281,7 @@ footer a:hover {
 /* RESPONSIVE */
 @media (max-width: 991px) {
   .contact-section {
-    padding: 100px 0 80px;
+    padding: 130px 0 80px;
   }
   
   .booking-info {
