@@ -135,8 +135,8 @@ body {
 }
 
 .collab-link-text a:hover {
-  color: var(--orange);
-  border-color: var(--orange);
+  color: var(--lime);
+  border-color: var(--lime);
 }
 
 .collab-image {

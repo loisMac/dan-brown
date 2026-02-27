@@ -153,6 +153,28 @@ body {
   object-position: center;      
 }
 
+.custom-shape-divider-bottom-1772127562 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1772127562 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 93px;
+}
+
+.custom-shape-divider-bottom-1772127562 .shape-fill {
+  fill: #EDEADE;
+}
+
+
 /* SECTIONS */
 .brief-bio,
 .featured-works {
@@ -273,7 +295,7 @@ body {
 }
 
 .work-link:hover {
-  color: var(--orange);
+  color: var(--lime);
 }
 
 /* FOOTER */
