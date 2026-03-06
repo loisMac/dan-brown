@@ -37,8 +37,7 @@ body {
 /* MARQUEE TICKER */
 .marquee-band {
   background: var(--lime);
-  overflow: hidden;
-  padding: 0.75rem 0;
+  height: 10px;
   border-bottom: 3px solid var(--charcoal);
   width: 100%;
   flex: 0 0 100%;
@@ -120,7 +119,7 @@ body {
 
 /* PAGE HEADER */
 .page-header {
-  padding: 170px 0 80px;
+  padding: 148px 0 80px;
   background: var(--off-white);
 }
 
@@ -144,6 +143,20 @@ body {
   line-height: 1;
   letter-spacing: -0.02em;
   color: var(--text);
+}
+
+.page-pronouns {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--charcoal);
+  background: var(--sky);
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
 }
 
 /* BIO CONTENT */
@@ -403,7 +416,7 @@ footer a:hover {
 /* RESPONSIVE */
 @media (max-width: 991px) {
   .page-header {
-    padding: 130px 0 60px;
+    padding: 108px 0 60px;
   }
   
   .bio-content {

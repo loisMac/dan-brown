@@ -89,8 +89,7 @@ body {
 /* MARQUEE TICKER */
 .marquee-band {
   background: var(--lime);
-  overflow: hidden;
-  padding: 0.75rem 0;
+  height: 10px;
   border-bottom: 3px solid var(--charcoal);
   width: 100%;
   flex: 0 0 100%;
@@ -121,7 +120,7 @@ body {
 
 /* HERO */
 .hero {
-  padding: 155px 0 100px;
+  padding: 130px 0 100px;
   background: var(--off-white);
 }
 
@@ -421,7 +420,7 @@ footer a:hover {
 /* RESPONSIVE */
 @media (max-width: 991px) {
   .hero {
-    padding: 130px 0 60px;
+    padding: 108px 0 60px;
   }
   
   .hero-image-wrap {
