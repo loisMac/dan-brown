@@ -4,7 +4,7 @@
 
 .photo-gallery {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 6px;
 }
 
@@ -17,6 +17,10 @@
   background: var(--charcoal);
   border: 2px solid transparent;
   transition: border-color 0.2s, opacity 0.2s;
+}
+
+.photo-gallery--wide {
+  grid-template-columns: repeat(6, 1fr);
 }
 
 .gallery-thumb:hover {
@@ -120,7 +124,11 @@
 
 @media (max-width: 767px) {
   .photo-gallery {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .photo-gallery--wide {
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .lightbox-img {
@@ -135,5 +143,9 @@
 @media (max-width: 480px) {
   .photo-gallery {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .photo-gallery--wide {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
